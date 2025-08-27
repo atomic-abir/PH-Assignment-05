@@ -17,12 +17,83 @@
         backdrop-filter: blur(10px);
         background: rgba(255, 255, 255, 0.06);
       }
+   
       .nav-shadow {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
       }
     </style>
-</head>
-<body>
+  </head>
+  <body class="bg-[#F5FFF6] text-slate-900">
+    <!-- navbar -->
+    <header class="sticky top-0 z-50 px-4 sm:px-8">
+      <nav
+        class="nav-shadow mx-auto mt-2 sm:mt-4 rounded-2xl border border-slate-200 bg-white"
+      >
+        <div class="flex items-center justify-between px-3 py-2 sm:px-4 sm:py-3 md:px-6">
+          <!-- logo name -->
+          <div class="flex items-center gap-2 sm:gap-3">
+            <img
+              src="assets/logo.png"
+              alt="Bangladesh Govt Logo"
+              class="h-7 w-7 sm:h-9 sm:w-9 rounded-full"
+            />
+            <div class="leading-tight">
+              <p class="font-extrabold tracking-tight text-[#006747] text-sm sm:text-base">
+                Emergency <br />
+                Service
+              </p>
+            </div>
+          </div>
+          <!-- heart coins copy -->
+          <div class="flex items-stretch gap-2 sm:gap-4">
+            <div class="flex flex-1 items-center justify-center gap-1 sm:gap-1.5 bg-[#41FF6B19] px-3 sm:px-6 py-1.5 sm:py-2 rounded-xl">
+              <span id="heartCount" class="font-bold text-pink-500 text-sm sm:text-base">0</span>
+              <button
+                id="navHeartBtn"
+                title="Give a heart"
+                class="hover:bg-slate-50 transition rounded p-1"
+              >
+                <img src="assets/heart.png" alt="Heart" class="h-4 w-4 sm:h-5 sm:w-5" />
+              </button>
+            </div>
+          
+            <div class="flex flex-1 items-center justify-center gap-1 sm:gap-1.5 bg-[#41FF6B19] px-3 sm:px-6 py-1.5 sm:py-2 rounded-xl">
+              <span id="coinCount" class="font-bold text-amber-500 text-sm sm:text-base">100</span>
+              <img src="assets/coin.png" alt="Coins" class="w-4 h-4 sm:w-5 sm:h-5" />
+            </div>
+          
+            <div class="flex flex-1 items-center justify-center gap-1 sm:gap-1.5 bg-[#00A63E] text-white px-3 sm:px-6 py-1.5 sm:py-1 rounded-full">
+              <span id="copyCount" class="text-sm sm:text-base">0</span>
+              <p class="text-xs sm:text-sm">Copy</p>
+             
+            </div>
+          </div>
+                  </div>
+      </nav>
+    </header>
+
+    <!-- banner -->
+    <section
+      class="relative mx-auto mt-4 sm:mt-6 overflow-hidden border border-slate-200 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]"
+    >
+      <div
+        class="relative grid place-items-center px-4 sm:px-6 py-12 sm:py-16 text-center text-white"
+      >
+        <img
+          src="assets/logo.png"
+          alt="Bangladesh Govt Logo"
+          class="mb-3 sm:mb-4 h-12 w-12 sm:h-14 sm:w-14 rounded-full bg-white/20"
+        />
+        <h1 class="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight px-2">
+          Emergency Service Directory 
+        </h1>
+        <p class="mt-2 sm:mt-3 max-w-4xl px-4 text-sm sm:text-base">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People's Republic of Bangladesh
+        </p>
+      </div>
+    </section>
+
     
-</body>
+</body> 
 </html>
