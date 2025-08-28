@@ -31,6 +31,7 @@
     </style>
   </head>
   <body class="bg-[#F5FFF6] text-slate-900">
+
     <!-- Navbar -->
     <header class="sticky top-0 z-50 px-4 sm:px-8">
       <nav
@@ -39,7 +40,7 @@
         <div
           class="flex items-center justify-between px-3 py-2 sm:px-4 sm:py-3 md:px-6"
         >
-          <!-- Left: Logo + Name -->
+          <!-- Logo  Name -->
           <div class="flex items-center gap-2 sm:gap-3">
             <img
               src="assets/logo.png"
@@ -55,7 +56,8 @@
               </p>
             </div>
           </div>
-          <!-- Right: Heart, Coins, Copy Count -->
+
+          <!--  Heart Coins Copy -->
           <div class="flex items-stretch gap-2 sm:gap-4">
             <div
               class="flex flex-1 items-center justify-center gap-1 sm:gap-1.5 bg-[#41FF6B19] px-3 sm:px-6 py-1.5 sm:py-2 rounded-xl"
@@ -94,8 +96,7 @@
             </div>
 
             <div
-              class="flex flex-1 items-center justify-center gap-1 sm:gap-1.5 bg-[#00A63E] text-white px-3 sm:px-6 py-1.5 sm:py-1 rounded-full"
-            >
+              class="flex flex-1 items-center justify-center gap-1 sm:gap-1.5 bg-[#00A63E] text-white px-3 sm:px-6 py-1 sm:py-1 rounded-2xl">
               <span id="copyCount" class="text-sm sm:text-base">0</span>
               <p class="text-xs sm:text-sm">Copy</p>
             </div>
@@ -104,7 +105,7 @@
       </nav>
     </header>
 
-    <!-- Hero -->
+    <!-- banner -->
     <section
       class="relative mx-auto mt-4 sm:mt-6 overflow-hidden border border-slate-200 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]"
     >
@@ -129,12 +130,17 @@
     </section>
 
     <!-- Main Section -->
+
     <main class="mx-auto mt-8 px-6 pb-[3.5rem]">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <!-- Cards (2 cols on desktop) -->
+
+
+        <!-- Cards  -->
+
         <section class="lg:col-span-2 space-y-4">
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <!-- Card 1: National Emergency Number -->
+
+            <!-- Card 1-->
             <div
               class="relative rounded-2xl border border-slate-200 bg-white p-4 hover:shadow transition shadow-md"
             >
@@ -184,7 +190,7 @@
               </div>
             </div>
 
-            <!-- Card 2: Police Helpline Number -->
+            <!-- Card 2 -->
             <div
               class="relative rounded-2xl border border-slate-200 bg-white p-4 hover:shadow transition shadow-md"
             >
@@ -204,9 +210,7 @@
                     />
                   </div>
                   <div class="mt-2">
-                    <p class="text-base font-semibold">
-                      Police Helpline Number
-                    </p>
+                    <p class="text-base font-semibold">Police Helpline Number</p>
                     <p class="text-sm text-slate-500">Police</p>
                   </div>
                   <div
@@ -236,7 +240,8 @@
               </div>
             </div>
 
-            <!-- Card 3: Fire Service Number -->
+
+            <!-- Card 3 -->
             <div
               class="relative rounded-2xl border border-slate-200 bg-white p-4 hover:shadow transition shadow-md"
             >
@@ -286,7 +291,8 @@
               </div>
             </div>
 
-            <!-- Card 4: Ambulance Service -->
+
+            <!-- Card 4 -->
             <div
               class="relative rounded-2xl border border-slate-200 bg-white p-4 hover:shadow transition shadow-md"
             >
@@ -336,7 +342,8 @@
               </div>
             </div>
 
-            <!-- Card 5: Women & Child Helpline -->
+
+            <!-- Card 5 -->
             <div
               class="relative rounded-2xl border border-slate-200 bg-white p-4 hover:shadow transition shadow-md"
             >
@@ -386,7 +393,8 @@
               </div>
             </div>
 
-            <!-- Card 6: Anti-Corruption Helpline -->
+
+            <!-- Card 6 -->
             <div
               class="relative rounded-2xl border border-slate-200 bg-white p-4 hover:shadow transition shadow-md"
             >
@@ -436,7 +444,8 @@
               </div>
             </div>
 
-            <!-- Card 7: Electricity Helpline -->
+
+            <!-- Card 7 -->
             <div
               class="relative rounded-2xl border border-slate-200 bg-white p-4 hover:shadow transition shadow-md"
             >
@@ -486,7 +495,8 @@
               </div>
             </div>
 
-            <!-- Card 8: Brac Helpline -->
+
+            <!-- Card 8 -->
             <div
               class="relative rounded-2xl border border-slate-200 bg-white p-4 hover:shadow transition shadow-md"
             >
@@ -536,7 +546,8 @@
               </div>
             </div>
 
-            <!-- Card 9: Bangladesh Railway Helpline -->
+
+            <!-- Card -->
             <div
               class="relative rounded-2xl border border-slate-200 bg-white p-4 hover:shadow transition shadow-md"
             >
@@ -590,28 +601,29 @@
 
         <!-- call history -->
 
-        <aside class="lg:col-span-1">
+         <aside class="lg:col-span-1">
           <div
             class="rounded-2xl border border-slate-200 bg-white text-slate-800"
           >
             <div
-              class="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 border-b border-slate-200"
+              class="flex items-center justify-between px-4 py-3 border-b border-slate-200"
             >
               <div class="flex items-center gap-2">
-                <span><i class="fa-regular fa-clock text-sm sm:text-base"></i></span>
-                <h3 class="font-semibold text-sm sm:text-base">Call History</h3>
+                <span><i class="fa-regular fa-clock"></i></span>
+                <h3 class="font-semibold">Call History</h3>
               </div>
               <button
                 id="clearHistory"
-                class="text-xs sm:text-sm font-semibold rounded-lg border border-transparent px-2 sm:px-3 py-1 sm:py-1.5 bg-green-600 text-white hover:bg-green-700"
+                class="text-sm font-semibold rounded-lg border border-transparent px-3 py-1.5 bg-green-600 text-white hover:bg-green-700"
               >
                 Clear
               </button>
             </div>
             <ul
               id="historyList"
-              class="divide-y divide-slate-200 max-h-[400px] sm:max-h-[520px] overflow-auto"
-            >
+              class="divide-y divide-slate-200 max-h-[520px] overflow-auto">
+
+              
     
 </body> 
 </html>
